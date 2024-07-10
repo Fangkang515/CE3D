@@ -5,7 +5,7 @@
 
 <be>
 
-# CE3D leverages an LLM to integrate dozens of different models.
+## CE3D leverages an LLM to integrate dozens of different models.
 
 <img src="./assets/ce3d_demo.gif" width="650">
 

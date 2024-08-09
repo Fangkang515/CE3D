@@ -2,11 +2,17 @@
 ## :star2: :star2: CE3D leverages an LLM to integrate dozens of different models :star2: :star2:
 
 
-## [Project Page](http://sk-fun.fun/CE3D/) | [Paper](https://arxiv.org/abs/2407.06842) | [Video](https://www.youtube.com/watch?v=btO1Ky9I21s) | [Datasets(soon)](https://drive.google.com/XXX) | [Ckpts(soon)](https://drive.google.com/XXX) | 
+## [Project Page](http://sk-fun.fun/CE3D/) | [Paper](https://arxiv.org/abs/2407.06842) | [Video](https://www.youtube.com/watch?v=btO1Ky9I21s) | [Datasets and Ckpts](https://drive.google.com/drive/folders/1KUIFMgvHeZtKIML-hzzBIjZ-3Kxo4JGt?usp=drive_link) | 
 
 # Updates
   - [x] **Hash-Atlas codes have been released** in the folder of *hash_atlas*
+  - [x] **Pretrained weights have been released**
+  - [x] **a dataset example has been released**  (More will be soon)
   - [ ] Release LLM-driven dialogue codes
+
+<be>
+
+<img src="./assets/ce3d_demo.gif" width="650">
 
 # Quick Start
 #### Create a new environment & Activate the new environment
@@ -35,7 +41,7 @@ cd hash_atlas
 unzip weights.zip
 cd ..
 
-# Download the dataset example from [Here]()
+# Download the dataset example from [Here](https://drive.google.com/file/d/1nsWj1La8sTAj88Kbc9f0VSbLOwIyoNtZ/view?usp=drive_link)
 cd datasets
 unzip flower.zip
 cd ..
@@ -66,7 +72,5 @@ python atlas_playground.py
 
 
 
-<be>
 
-<img src="./assets/ce3d_demo.gif" width="650">
 

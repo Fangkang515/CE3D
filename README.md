@@ -71,6 +71,17 @@ python atlas_playground.py
 ```
 
 
+## Citation
+
+If you find our code or paper useful, please consider citing
+```
+@article{fang2024chat,
+  title={Chat-Edit-3D: Interactive 3D Scene Editing via Text Prompts},
+  author={Fang, Shuangkang and Wang, Yufeng and Tsai, Yi-Hsuan and Yang, Yi and Ding, Wenrui and Zhou, Shuchang and Yang, Ming-Hsuan},
+  journal={arXiv preprint arXiv:2407.06842},
+  year={2024}
+}
+```
 
 
 

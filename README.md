@@ -9,23 +9,60 @@
   - [ ] Release LLM-driven dialogue codes
 
 # Quick Start
-、、、
-# Create a new environment
-conda create -n CE3D python=3.10
+#### Create a new environment & Activate the new environment
+```
+https://github.com/Fangkang515/CE3D.git
+cd CE3D
 
-# Activate the new environment
+conda create -n CE3D python=3.10
 conda activate CE3D
 
-#  prepare the basic environments
 pip install -r requirements.txt
 pip install  git+https://github.com/IDEA-Research/GroundingDINO.git
 pip install  git+https://github.com/facebookresearch/segment-anything.git
 
-# Download the checkpoints / pretrained-weights / dataset examples
+install tiny-cuda-nn according to https://github.com/NVlabs/tiny-cuda-nn/tree/master
 
-、、、
+```
 
+#### Download the checkpoints / pretrained-weights / dataset examples
+```
+# Download the checkpoints (sam, dino, et.al) from [Here]()
+unzip checkpoints.zip
 
+# Download the pretrained-weights (atlas) from [Here](https://drive.google.com/file/d/14FY23C8u9-igNCm1Wo1Mm8JVs35sszw6/view?usp=sharing)
+cd hash_atlas
+unzip weights.zip
+cd ..
+
+# Download the dataset example from [Here]()
+cd datasets
+unzip flower.zip
+cd ..
+```
+
+#### If you want to manually train the Atlas 
+```
+# note: (the final code will be automatically executed to obtain Atlas of a 3D scene)
+# 
+cd hash_atlas
+python atlas_playground.py
+
+# Then You will find an atlas_space folder in the ../datasets/lower directory, like below:
+ |-flower   
+    |-XXX
+    |-work_space
+    |  |atlas_space
+    |  |  |flow
+    |  |  |mask
+    |  |  |propainter
+    |  |  |training_results
+    |  |final_atlas
+    |  |  | atlas_ori_foreground.png
+    |  |  | atlas_ori_background.png
+    |  |editing_space
+    |  |  |XXX
+```
 
 
 

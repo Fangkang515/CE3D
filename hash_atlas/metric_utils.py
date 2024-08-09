@@ -76,8 +76,8 @@ def compute_ssim(
     mu00 = mu0 * mu0
     mu11 = mu1 * mu1
     mu01 = mu0 * mu1
-    sigma00 = filt_fn(img0 ** 2) - mu00
-    sigma11 = filt_fn(img1 ** 2) - mu11
+    sigma00 = filt_fn(img0**2) - mu00
+    sigma11 = filt_fn(img1**2) - mu11
     sigma01 = filt_fn(img0 * img1) - mu01
 
     # Clip the variances and covariances to valid values.
@@ -109,4 +109,3 @@ lpips_fns = {
 
 def rgb_lpips(gt, im, net_name):
     return lpips_fns[net_name](gt, im, normalize=True).item()
-

@@ -13,7 +13,7 @@ from core_flow.utils import flow_viz
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 
-class RAFTWrapper():
+class RAFTWrapper:
     def __init__(self, model_path, max_long_edge=900):
         args = argparse.Namespace()
         args.small = False
@@ -32,7 +32,7 @@ class RAFTWrapper():
     def load_image(self, fn):
         img = np.array(Image.open(fn)).astype(np.uint8)
         if img is None:
-            print(f'Error reading file: {fn}')
+            print(f"Error reading file: {fn}")
             sys.exit(1)
 
         im_h = img.shape[0]
@@ -58,7 +58,7 @@ class RAFTWrapper():
         return padder.pad(images)[0]
 
     def load_images(self, fn1, fn2):
-        """ load and resize to multiple of 64 """
+        """load and resize to multiple of 64"""
         images = [fn1, fn2]
         images = self.load_image_list(images)
         im1 = images[0, None]
@@ -78,4 +78,3 @@ class RAFTWrapper():
         # map flow to rgb image
         img = flow_viz.flow_to_image(flo)
         return img
-

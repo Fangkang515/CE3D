@@ -12,6 +12,7 @@ from evaluate import evaluate_model
 import os
 import json
 from pathlib import Path
+
 try:
     import tinycudann as tcnn
 except ImportError:
@@ -27,7 +28,7 @@ device = torch.device("cuda")
 
 
 def get_ori_img_size(data_folder):
-    frame = cv2.imread(glob.glob(f'{data_folder}/*.png')[0])
+    frame = cv2.imread(glob.glob(f"{data_folder}/*.png")[0])
     h, w, _ = frame.shape
     return np.int64(w), np.int64(h)
 
@@ -47,7 +48,7 @@ def main(
     maximum_number_of_frames = config["maximum_number_of_frames"]
     # resx = np.int64(config["resx"])
     # resy = np.int64(config["resy"])
-    resx, resy = get_ori_img_size(config['data_folder'])
+    resx, resy = get_ori_img_size(config["data_folder"])
     positional_encoding_num_alpha = config["positional_encoding_num_alpha"]
     number_of_channels_atlas = config["number_of_channels_atlas"]
     number_of_layers_atlas = config["number_of_layers_atlas"]

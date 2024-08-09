@@ -1,0 +1,8 @@
+__pycache__/
+datasets/
+run.py
+*.zip
+
+
+.DS_Store
+

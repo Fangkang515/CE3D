@@ -31,17 +31,17 @@ install tiny-cuda-nn according to https://github.com/NVlabs/tiny-cuda-nn/tree/ma
 
 ```
 
-#### Download the checkpoints / pretrained-weights / dataset examples
+#### Download the [checkpoints](https://drive.google.com/file/d/1euRnJpn75MP0V_nKKlc6oSoSwwhYwBFP/view?usp=drive_link) / [pretrained-weights](https://drive.google.com/file/d/14FY23C8u9-igNCm1Wo1Mm8JVs35sszw6/view?usp=sharing) / [dataset examples](https://drive.google.com/file/d/1nsWj1La8sTAj88Kbc9f0VSbLOwIyoNtZ/view?usp=drive_link)
 ```
-# optional: Download the checkpoints (sam, dino, et.al) from [Here](https://drive.google.com/file/d/1euRnJpn75MP0V_nKKlc6oSoSwwhYwBFP/view?usp=drive_link). (Directly running the code will also automatically download this file)
+# optional: Download the checkpoints of Sam, Dino, et.al. (Directly running the code will also automatically download this file)
 unzip checkpoints.zip
 
-# Download the pretrained-weights (atlas) from [Here](https://drive.google.com/file/d/14FY23C8u9-igNCm1Wo1Mm8JVs35sszw6/view?usp=sharing)
+# Download the pretrained-weights (atlas)
 cd hash_atlas
 unzip weights.zip
 cd ..
 
-# Download the dataset example from [Here](https://drive.google.com/file/d/1nsWj1La8sTAj88Kbc9f0VSbLOwIyoNtZ/view?usp=drive_link)
+# Download the dataset example
 cd datasets
 unzip flower.zip
 cd ..

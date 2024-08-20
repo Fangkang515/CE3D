@@ -54,7 +54,7 @@ cd ..
 cd hash_atlas
 python atlas_playground.py
 
-# Then You will find an atlas_space folder in the ../datasets/lower directory, like below:
+# Then You will find an atlas_space folder in the ../datasets/flower directory, like below:
  |-flower   
     |-XXX
     |-work_space

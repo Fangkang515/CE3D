@@ -1,5 +1,6 @@
 __pycache__/
 datasets/
+model_zoos/ProPainter/model/modules/__pycache__/
 run.py
 *.zip
 

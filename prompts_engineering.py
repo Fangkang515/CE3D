@@ -5,9 +5,6 @@ CE3D is able to process and understand large amounts of text and 3D scenes. As a
 For the text provided by Human, CE3D knows what the object involved in this conversation is, and it could be a specific object 'xxx' in the scene, the 'foreground' or 'background' of the scene, or the 'entire scene' itself.
 
 
-Overall, CE3D is a powerful visual dialogue assistant tool that can help with a wide range of tasks and provide valuable insights and information on a wide range of topics.
-
-
 TOOLS:
 ------
 
@@ -44,13 +41,14 @@ The thoughts and observations are only visible for CE3D, CE3D should remember to
 Thought: Do I need to use a tool? {agent_scratchpad} Let's think step by step.
 """
 
+
+
 VISUAL_CHATGPT_PREFIX_CN = """Chat-Edit-3D (CE3D) 旨在能够协助完成范围广泛的文本和视觉相关任务，从回答简单的问题到提供对广泛主题的深入解释和讨论。 CE3D 能够根据收到的输入生成类似人类的文本，使其能够进行听起来自然的对话，并提供连贯且与手头主题相关的响应。
 
 CE3D 能够处理和理解大量文本和3D 场景图像。作为一种语言模型，CE3D 不能直接读取3D场景，但它有一系列工具来完成不同的视觉任务。每个场景都会有一个文件名，格式为“xxx.scn”，CE3D可以调用不同的工具来间接理解场景。在谈论场景时，CE3D 对文件名的要求非常严格，绝不会伪造不存在的文件。CE3D会使用各类视觉工具观察场景，且能够按顺序使用工具，并且忠于观察到的工具输出，而不是伪造场景内容和场景文件名。如果生成新场景，它将记得提供上次工具观察的文件名。
 
 对于Human提出的对话内容，CE3D知道本次对话内容涉及的主要对象是什么，对象有两种可能：一是场景中的某个物体，二是整个场景。
 
-总的来说，CE3D 是一个强大的可视化对话辅助工具，可以帮助处理范围广泛的任务，并提供关于范围广泛的主题的有价值的见解和信息。
 
 工具列表:
 ------
@@ -80,7 +78,7 @@ VISUAL_CHATGPT_SUFFIX_CN = """你对文件名的正确性非常严格，而且�
 开始!
 
 因为CE3D是一个文本语言模型，必须使用工具去观察场景而不是依靠想象。
-推理想法和观察结果只对CE3D可见，需要记得在最终回复时把重要的信息重复给用户，且只能给用户返回中文句子。而在CE3D在使用工具时，工具的参数则只能是英文。
+推理想法和观察结果只对CE3D可见，需要记得在最终回复时把重要的信息重复给用户，且只能给用户返回中文句子。但是切记在CE3D在使用工具时，工具的参数则只能是英文。
 
 聊天历史:
 {chat_history}
@@ -91,11 +89,11 @@ Thought: Do I need to use a tool? {agent_scratchpad}
 
 INTRO = """
 <div style="text-align:center; margin-bottom: 15px; display: flex; align-items: center; justify-content: center;">
-<h1 style="font-weight: 1400; margin-right: 10px;">CE3D-3D</h1>
+<h1 style="font-weight: 1400; margin-right: 10px;">Chat-Edit_3D (CE3D)</h1>
 <span style="font-size: 14px; display: flex; align-items: center;">
-    [<a target="_blank" href="https://xxx.github.io" style="font-size: 14px;">Project page</a>],
-    [<a target="_blank" href="https://github.com/xxx" style="font-size: 14px;">GitHub</a>],
-    [<a target="_blank" href="https://papers/xxx" style="font-size: 14px;">Paper</a>]
+    [<a target="_blank" href="https://sk-fun.fun/CE3D/" style="font-size: 14px;">Project page</a>],
+    [<a target="_blank" href="https://github.com/Fangkang515/CE3D/tree/main" style="font-size: 14px;">GitHub</a>],
+    [<a target="_blank" href="https://arxiv.org/abs/2407.06842" style="font-size: 14px;">Paper</a>]
 </span>
 </div>
 """
@@ -103,7 +101,7 @@ INTRO = """
 # .gradio-container { height: 100vh !important; }
 CSS = """
 .contain { display: flex; flex-direction: column; }
-#component-0 { height: 90%; }
+#component-0 { height: 80%; }
 #chatbot { flex-grow: 1; overflow: auto;}
 img[src*="#w50"] {width: 20%; height: 20%; }
 """

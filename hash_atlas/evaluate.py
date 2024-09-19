@@ -281,6 +281,26 @@ def normalize_uv_images(uv_frames_reconstruction, values_shift, edge_size, minx,
     return uv_frames_reconstruction
 
 
+def save_recoverd_frames(data_frame_folder, evaluation_folder):
+    save_path = (
+        "%s/final_recoverd_frames_from_atlas"
+        % evaluation_folder.split("atlas_space")[0]
+    )
+    os.makedirs(save_path, exist_ok=True)
+    img_names = sorted(os.listdir(data_frame_folder))
+    video_path = "%s/reconstruction_from_atlas.mp4" % (evaluation_folder)
+    video_capture = cv2.VideoCapture(video_path)
+    cnt = 0
+    while True:
+        ret, frame = video_capture.read()
+        if not ret:
+            break
+        frame_path = os.path.join(save_path, img_names[cnt])
+        cv2.imwrite(frame_path, frame)
+        cnt += 1
+    video_capture.release()
+
+
 def evaluate_model(
     model_F_atlas,
     resx,
@@ -297,6 +317,7 @@ def evaluate_model(
     uv_mapping_scale,
     optical_flows,
     optical_flows_mask,
+    data_frame_folder,
     device,
     save_checkpoint=True,
     show_atlas_alpha=False,
@@ -889,6 +910,7 @@ def evaluate_model(
     writer_im_rec = imageio.get_writer(
         "%s/reconstruction_from_atlas.mp4" % (evaluation_folder), fps=10
     )
+
     writer_residuals = imageio.get_writer(
         "%s/reconstruction_error_visualization.mp4" % (evaluation_folder), fps=10
     )
@@ -1103,6 +1125,8 @@ def evaluate_model(
     writer_checkerboard_1.close()
     writer_checkerboard_2.close()
     writer_uv_1_masked.close()
+
+    save_recoverd_frames(data_frame_folder, evaluation_folder)
 
     # save the psnr result as the name of a dummy file
     file1 = open(

@@ -35,8 +35,6 @@ except ImportError:
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-ReconstructResolution = 512
-
 
 def PIL_rgba2rgb(img):
     if img.shape[-1] == 4:
@@ -64,6 +62,7 @@ def apply_edit(
     input_files="",
     frontend_save_name="./",
     mask_of_new_obj=None,
+    ReconstructResolution=512,
 ):
     imageio.imwrite(
         "%s/user_provided_edited_atlas_foreground.png" % output_folder_final,
@@ -109,7 +108,6 @@ def apply_edit(
         model_F_atlas,
         device,
     )
-
     edited_tex1_only_edit = torch.from_numpy(texture_edit_im1)
     edited_tex1 = (
         torch.from_numpy(1 - alpha_im1).unsqueeze(-1) * texture_orig1
@@ -336,6 +334,7 @@ def Atlas2frames(
     output_folder,
     frontend_save_name="./frontend.png",
     mask_of_new_obj=None,
+    resolution=512,
 ):
     # mask_of_new_obj: When true, the alpha of points with pixel values>0 remains unchanged, while the rest are set to 0; When false, it means using the original alpha
     # Read the config of the trained model
@@ -343,7 +342,6 @@ def Atlas2frames(
         config = json.load(f)
 
     config["data_folder"] = frames_folder
-
     maximum_number_of_frames = config["maximum_number_of_frames"]
     resx, resy = get_ori_img_size(config["data_folder"])
     data_folder = Path(frames_folder)
@@ -457,6 +455,7 @@ def Atlas2frames(
         input_files=input_files,
         frontend_save_name=frontend_save_name,
         mask_of_new_obj=mask_of_new_obj,
+        ReconstructResolution=resolution,
     )
 
 

@@ -175,9 +175,7 @@ def main(config):
 
     getting_optical_flow(data_folder)
 
-    vid_root = (
-        data_folder.parent / "work_space" / "atlas_space"
-    )  # .../scene/work_space/atlas_space
+    vid_root = data_folder.parent / "work_space" / "atlas_space"
 
     results_folder = vid_root / f"training_results{add_to_experiment_folder_name}"
 
@@ -581,6 +579,7 @@ def main(config):
                 uv_mapping_scale,
                 optical_flows,
                 optical_flows_mask,
+                data_folder,
                 device,
             )
             metric_path = "/".join(str(results_folder).split("/")[:6])
@@ -605,7 +604,7 @@ def main(config):
 config_atlas = {
     "data_folder": "Your/dataset_zoos/llff/qq11/images_2",
     "maximum_number_of_frames": 200,
-    "iters_num": 100000,
+    "iters_num": 60000,
     "evaluate_every": 20000,
     "samples_batch": 10000,
     "optical_flow_coeff": 5.0,

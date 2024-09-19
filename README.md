@@ -7,8 +7,8 @@
 # Updates
   - [x] **Hash-Atlas codes have been released** in the folder of *hash_atlas*
   - [x] **Pretrained weights have been released**
-  - [x] **a dataset example has been released**  (More will be soon)
-  - [ ] Release LLM-driven dialogue codes
+  - [x] **a dataset example has been released** 
+  - [x] **Release LLM-driven dialogue codes** (Updated 2024.09.19)
 
 <be>
 

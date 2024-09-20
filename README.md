@@ -15,7 +15,8 @@
 
 <be>
 
-<img src="./assets/ce3d_demo.gif" width="650">
+<img src="./assets/usage_demo1.gif" width="650">
+
 
 # Quick Start
 #### Create a new environment & Activate the new environment

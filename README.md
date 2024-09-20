@@ -21,6 +21,18 @@
 
 
 # Quick Start
+
+After you have set up the environment, you only need to run the following command:
+```
+make run-all
+```
+Then visit http://localhost:7862 on the web to freely edit the 3D scene.
+
+The above operation integrates more than 20 visual models and requires about 100G of GPU memory. If you don't have it, you can run the small version of ce3d, which only requires 20G of GPU memory (but the editing ability is limited). The commands are as follows:
+```
+make run-small-instruct
+```
+
 #### Create a new environment & Activate the new environment
 ```
 https://github.com/Fangkang515/CE3D.git

@@ -15,6 +15,8 @@
 
 <be>
 
+**You can edit 3D scenes in the same way you interact with ChatGPT**.
+
 <img src="./assets/demo1.gif" width="800">
 
 

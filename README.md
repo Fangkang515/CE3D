@@ -15,7 +15,7 @@
 
 <be>
 
-<img src="./assets/usage_demo1.gif" width="800">
+<img src="./assets/demo1.gif" width="800">
 
 
 # Quick Start

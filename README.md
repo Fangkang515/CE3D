@@ -1,4 +1,4 @@
-## Chat Edit 3D: Interactive 3D Scene Editing via Text Prompts, :heart: ECCV2024 :heart:
+## Chat Edit 3D: Interactive 3D Scene Editing via Text Prompts :heart: ECCV2024 :heart:
 ### :star2: :star2: CE3D leverages an LLM to integrate dozens of different models to enable various 3D scene editing during chatting. (We welcome your contributions) :star2: :star2:
 
 

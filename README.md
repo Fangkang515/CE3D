@@ -5,10 +5,13 @@
 ## [Project Page](http://sk-fun.fun/CE3D/) | [Paper](https://arxiv.org/abs/2407.06842) | [Video](https://www.youtube.com/watch?v=btO1Ky9I21s) | [Datasets and Ckpts](https://drive.google.com/drive/folders/1KUIFMgvHeZtKIML-hzzBIjZ-3Kxo4JGt?usp=drive_link) | 
 
 # Updates
-  - [x] **Hash-Atlas codes have been released** in the folder of *hash_atlas*
-  - [x] **Pretrained weights and a dataset example have been released**
-  - [x] **Release LLM-driven dialogue codes** 
+  - [x] Hash-Atlas codes have been released in the folder of *hash_atlas*
+  - [x] Pretrained weights and a dataset example have been released
+  - [x] Release LLM-driven dialogue codes
   - [ ] :heartpulse: CE3D involves a large number of models and features, and there may be quite a few bugs currently. **It requires the collective effort of the community!** **We welcome your contributions**. If you have new ideas or feature implementations, please feel free to submit a pull request or contact me at any time. :heartpulse:
+
+
+# Demo (usage tutorial)
 
 <be>
 

@@ -40,7 +40,7 @@ make run-small-instruct
 python3 chat_edit_3D.py --port 7862 --clean_FBends --load "Segmenting_cuda:0,ImageCaptioning_cuda:0,VisualQuestionAnswering_cuda:0,Text2Box_cuda:0,Inpainting_cuda:0,InstructPix2Pix_cuda:0"
 ```
 
-#### Create a new environment & Activate the new environment
+#### Step 1: Create a new environment & Activate the new environment
 ```
 https://github.com/Fangkang515/CE3D.git
 cd CE3D
@@ -56,7 +56,7 @@ install tiny-cuda-nn according to https://github.com/NVlabs/tiny-cuda-nn/tree/ma
 
 ```
 
-#### Download the [checkpoints](https://drive.google.com/file/d/1euRnJpn75MP0V_nKKlc6oSoSwwhYwBFP/view?usp=drive_link) / [pretrained-weights](https://drive.google.com/file/d/14FY23C8u9-igNCm1Wo1Mm8JVs35sszw6/view?usp=sharing) / [dataset examples](https://drive.google.com/file/d/1nsWj1La8sTAj88Kbc9f0VSbLOwIyoNtZ/view?usp=drive_link)
+#### Step 2: Download the [checkpoints](https://drive.google.com/file/d/1euRnJpn75MP0V_nKKlc6oSoSwwhYwBFP/view?usp=drive_link) / [pretrained-weights](https://drive.google.com/file/d/14FY23C8u9-igNCm1Wo1Mm8JVs35sszw6/view?usp=sharing) / [dataset examples](https://drive.google.com/file/d/1nsWj1La8sTAj88Kbc9f0VSbLOwIyoNtZ/view?usp=drive_link)
 ```
 # optional: Download the checkpoints of Sam, Dino, et.al. (Directly running the code will also automatically download this file)
 unzip checkpoints.zip
@@ -72,7 +72,7 @@ unzip flower.zip
 cd ..
 ```
 
-#### If you want to manually train the Atlas 
+#### Tips: If you want to manually train the Atlas 
 ```
 # note: (the final code will be automatically executed to obtain Atlas of a 3D scene)
 # 

@@ -582,15 +582,15 @@ def main(config):
                 data_folder,
                 device,
             )
-            metric_path = "/".join(str(results_folder).split("/")[:6])
-            scene_name = str(results_folder).split("/")[6]
-            print(metric_path, scene_name)
+            metric_path = str(results_folder).split("training_results")[0]
+            # scene_name = str(results_folder).split("/")[6]
+            # print(metric_path, scene_name)
             using_time = time() - begin_time
             with open(
-                f"{metric_path}/{add_to_experiment_folder_name}.txt", "a"
+                f"{metric_path}/metric.txt", "a"
             ) as file:
                 file.write(
-                    f"{scene_name} i:{i} psnr:{psnrs.mean():.2f} ssim:{ssim.mean():.2f} lpips:{lpips.mean():.2f} t:{using_time/60:.2f}min\n"
+                    f"i:{i} psnr:{psnrs.mean():.2f} ssim:{ssim.mean():.2f} lpips:{lpips.mean():.2f} t:{using_time/60:.2f}min\n"
                 )
                 if i == iters_num - 1:
                     file.write("\n\n")

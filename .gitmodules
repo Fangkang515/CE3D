@@ -1,6 +1,3 @@
-[submodule "model_zoos/TensoRF"]
-	path = model_zoos/TensoRF
-	url = https://github.com/apchenstu/TensoRF.git
 [submodule "model_zoos/gaussian-splatting"]
 	path = model_zoos/gaussian-splatting
 	url = https://github.com/graphdeco-inria/gaussian-splatting.git

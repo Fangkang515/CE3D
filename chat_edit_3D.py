@@ -3017,11 +3017,6 @@ class ConversationBot:
 
         editing_space = os.path.join(folder_path_3D, "work_space", "editing_space")
         os.makedirs(os.path.join(editing_space, "frames"), exist_ok=True)
-        global_display_edited_frames = [
-            p.replace(ori_img_path_name, "work_space/editing_space/frames")
-            for p in global_display_original_frames
-        ]
-
         #  using VQA to get the foreground and background
         foreground = self.models["VisualQuestionAnswering"].inference(
             f"{ori_frame_paths[0]},what are the main objects of this image?"
@@ -3058,10 +3053,18 @@ class ConversationBot:
 
             train_atlas(frames_folder)
 
+        global_display_edited_frames = [
+            p.replace(ori_img_path_name, "work_space/editing_space/frames")
+            for p in global_display_original_frames
+        ]
         global_display_original_frames = [
             p.replace(ori_img_path_name, "work_space/final_recoverd_frames_from_atlas")
             for p in global_display_original_frames
         ]
+        for i in range(len(global_display_original_frames)):  # At the beginning, the original and edited are the same
+            cmd = f"cp {global_display_original_frames[i]} {global_display_edited_frames[i]}"
+            os.system(cmd)
+
         # prepare the frontend image and its caption for the interaction with the user
         print("\n======>Processing images for interaction Chat...")
         img = Image.open(ori_frame_paths[0])

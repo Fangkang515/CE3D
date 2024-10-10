@@ -1,8 +1,10 @@
 ## Chat Edit 3D: Interactive 3D Scene Editing via Text Prompts :heart: ECCV2024 :heart:
-### :star2: :star2: CE3D leverages an LLM to integrate dozens of different models to enable various 3D scene editing during chatting. (We welcome your contributions) :star2: :star2:
-
+### :star2: :star2: CE3D leverages an LLM to integrate dozens of different models to enable various 3D scene editing during chatting :star2: :star2:
 
 ### [Project Page](http://sk-fun.fun/CE3D/) | [Paper](https://arxiv.org/abs/2407.06842) | [Video](https://www.youtube.com/watch?v=btO1Ky9I21s) | [Datasets and Ckpts](https://drive.google.com/drive/folders/1KUIFMgvHeZtKIML-hzzBIjZ-3Kxo4JGt?usp=drive_link) | 
+
+<img src="./assets/chat_example.png" width="800">
+
 
 # Updates
   - [x] Hash-Atlas codes have been released in the folder of *hash_atlas*

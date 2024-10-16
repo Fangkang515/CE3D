@@ -24,7 +24,7 @@
 
 # Quick Start
 
-**After you have set up the environment, you only need to run the following command:**
+**After you have [set up the environment](https://github.com/Fangkang515/CE3D/tree/main?tab=readme-ov-file#step-1-create-a-new-environment--activate-the-new-environment), you only need to run the following command:**
 ```
 # prepare your private OpenAI key.
 export OPENAI_API_KEY={Your_Private_Openai_Key}

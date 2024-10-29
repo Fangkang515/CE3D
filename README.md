@@ -32,7 +32,7 @@ export OPENAI_API_KEY={Your_Private_Openai_Key}
 # running the demo (Advice for two Tesla A100/A800 80GB)
 make run-all
 
-# you can also runing manually to select required features and configure the GPUs.
+# you can also running manually to select required features and configure the GPUs.
 python3 chat_edit_3D.py --port 7862 --clean_FBends --load "Segmenting_cuda:0,\
   ImageCaptioning_cuda:0,Text2Image_cuda:0,VisualQuestionAnswering_cuda:0,\
   Text2Box_cuda:0,Inpainting_cuda:0,InstructPix2Pix_cuda:0,Image2Depth_cuda:0,\
@@ -49,7 +49,7 @@ The above operation integrates more than 20 visual models and requires about 100
 ```
 make run-small-instruct
 
-# you can also runing manually:
+# you can also running manually:
 python3 chat_edit_3D.py --port 7862 --clean_FBends --load "Segmenting_cuda:0,\
 ImageCaptioning_cuda:0,VisualQuestionAnswering_cuda:0,Text2Box_cuda:0,\
 Inpainting_cuda:0,InstructPix2Pix_cuda:0"

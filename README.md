@@ -32,7 +32,7 @@ export OPENAI_API_KEY={Your_Private_Openai_Key}
 # running the demo (Advice for two Tesla A100/A800 80GB)
 make run-all
 
-# you can also runing manually to select required features and configure the GPUs.
+# You can also run manually to select the required features and configure the GPUs.
 python3 chat_edit_3D.py --port 7862 --clean_FBends --load "Segmenting_cuda:0,\
   ImageCaptioning_cuda:0,Text2Image_cuda:0,VisualQuestionAnswering_cuda:0,\
   Text2Box_cuda:0,Inpainting_cuda:0,InstructPix2Pix_cuda:0,Image2Depth_cuda:0,\
@@ -49,7 +49,7 @@ The above operation integrates more than 20 visual models and requires about 100
 ```
 make run-small-instruct
 
-# you can also runing manually:
+# You can also run manually:
 python3 chat_edit_3D.py --port 7862 --clean_FBends --load "Segmenting_cuda:0,\
 ImageCaptioning_cuda:0,VisualQuestionAnswering_cuda:0,Text2Box_cuda:0,\
 Inpainting_cuda:0,InstructPix2Pix_cuda:0"
@@ -73,7 +73,7 @@ install tiny-cuda-nn according to https://github.com/NVlabs/tiny-cuda-nn/tree/ma
 
 #### Step 2: Download the [checkpoints](https://drive.google.com/file/d/1euRnJpn75MP0V_nKKlc6oSoSwwhYwBFP/view?usp=drive_link) / [pretrained-weights](https://drive.google.com/file/d/14FY23C8u9-igNCm1Wo1Mm8JVs35sszw6/view?usp=sharing) / [dataset examples](https://drive.google.com/file/d/1nsWj1La8sTAj88Kbc9f0VSbLOwIyoNtZ/view?usp=drive_link)
 ```
-# optional: Download the checkpoints of Sam, Dino, et.al. (Directly running the code will also automatically download this file)
+# optional: Download the checkpoints of Sam, Dino, et al. (Directly running the code will also automatically download this file)
 unzip checkpoints.zip
 
 # Download the pretrained-weights (atlas)
@@ -87,7 +87,7 @@ unzip flower.zip
 cd ..
 ```
 
-#### Tips: If you want to manually train the Atlas 
+#### Tips: If you want to train the Atlas manually 
 ```
 # note: (the final code will be automatically executed to obtain Atlas of a 3D scene)
 # 
@@ -113,7 +113,7 @@ python atlas_playground.py
 
 ## Citation
 
-If you find our code or paper useful, please consider citing
+If you find our code or paper useful, please consider citing.
 ```
 @article{fang2024chat,
   title={Chat-Edit-3D: Interactive 3D Scene Editing via Text Prompts},

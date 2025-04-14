@@ -10,7 +10,7 @@
   - [x] Hash-Atlas codes have been released in the folder of *hash_atlas*
   - [x] Pretrained weights and a dataset example have been released
   - [x] Release LLM-driven dialogue codes
-  - [ ] :heartpulse: :heartpulse: :heartpulse: CE3D involves a large number of models and features, and there may be quite a few bugs currently. **It requires the collective effort of the community!** **We welcome your contributions**. If you have new ideas or feature implementations, please feel free to submit a pull request or contact me at any time. :heartpulse: :heartpulse: :heartpulse:
+  - [ ] :heartpulse: :heartpulse: :heartpulse: We are in the process of supporting 4D scene, as well as adding more visual tools, and plan to support locally deployed LLMs! :heartpulse: :heartpulse: :heartpulse:
 
 
 # Demo (usage tutorial)

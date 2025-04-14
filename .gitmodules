@@ -4,3 +4,6 @@
 [submodule "model_zoos/ControlNet"]
 	path = model_zoos/ControlNet
 	url = https://github.com/lllyasviel/ControlNet.git
+[submodule "model_zoos/4DGaussians"]
+	path = model_zoos/4DGaussians
+	url = https://github.com/hustvl/4DGaussians

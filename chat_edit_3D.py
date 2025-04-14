@@ -126,6 +126,15 @@ func_name_mapping = {
     "segmentation": "seg",
     "SR": "SR",
     "Extract": "Ext",
+    "Doubao": "DB",
+    "GPT4oImage": "4o",
+    "GhibliStyle": "Ghibli",
+    "Dereflection": "Defle",
+    "LowLight": "LL",
+    "ArtisticTypography": "ArTypo",
+    "Defocus": "Defo",
+    "Recoloring": "Reco",
+    "Sturation": "Stu",
 }
 
 
@@ -1758,7 +1767,7 @@ class ReferenceImageTextEditing:
         self.negative_prompt = "over-exposure, under-exposure, saturated, duplicate, out of frame, lowres, cropped, worst quality, low quality, jpeg artifacts, morbid, mutilated, out of frame, ugly, bad anatomy, bad proportions, deformed, blurry, duplicate"
 
     @prompts(
-        name="Generate New Image Condition Base on a Reference image and Text prompt",
+        name="Generate New Scene Condition Base on a Reference image and Text prompt",
         description="useful when you want to generate a new Scene from both the user description and a reference image. "
         "like: generate a new real Scene of an object or something for the Scene X based on the reference image Y, "
         "or refer to image Y to generate a new Scene at night for the Scene X. "

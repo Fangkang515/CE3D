@@ -26,5 +26,5 @@ test-tube==0.7.5
 timm==0.9.12
 torchmetrics==0.11.4
 transformers==4.36.2
-webdataset==0.2.86
 yapf==0.40.2
+webdataset==0.2.86

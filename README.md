@@ -10,7 +10,7 @@
   - [x] Hash-Atlas codes have been released in the folder of *hash_atlas*
   - [x] Pretrained weights and a dataset example have been released
   - [x] Release LLM-driven dialogue codes
-  - [ ] :heartpulse: :heartpulse: :heartpulse: We are in the process of supporting 4D scene, as well as adding more visual tools, and plan to support locally deployed LLMs! :heartpulse: :heartpulse: :heartpulse:
+  - [x] Support 4D scene, as well as add more visual tools
 
 
 # Demo (usage tutorial)

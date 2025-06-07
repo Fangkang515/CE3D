@@ -28,3 +28,11 @@ torchmetrics==0.11.4
 transformers==4.36.2
 yapf==0.40.2
 webdataset==0.2.86
+ConfigArgParse==1.7.1                                                                                                                                                                            
+plyfile==1.1.2                                                                                                                                                                                   
+clip==1.0                                                                                                                                                                                        
+lpips==0.1.4                                                                                                                                                                                     
+pydantic==2.9.0                                                                                                                                                                                  
+pydantic-core==2.23.2                                                                                                                                                                            
+fastapi==0.112.4  
+huggingface-hub==0.25.2

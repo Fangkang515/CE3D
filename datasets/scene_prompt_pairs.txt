@@ -1,0 +1,131 @@
+============================================================
+LLFF
+============================================================
+
+[fern]
+1. Change the fern leaves to golden yellow while keeping the planter and the room unchanged.
+2. Turn the entire scene into a Van Gogh painting.
+3. Extract the fern plant and remove the background.
+4. Predict the normal map of the scene.
+5. Replace the concrete planter with a terracotta planter while keeping the fern unchanged.
+
+[flower]
+1. predict the depth map of the scene
+2. Turn the scene into a children's drawing.
+3. Turn the flowers into ice sculptures while keeping the surrounding leaves unchanged.
+4. Change the red flower petals to bright yellow while keeping the green leaves unchanged.
+5. Extract the red flowers and remove the surrounding foliage and background.
+
+[fortress]
+1. predict the scribble of the scene
+2. Turn the scene into a small stone resting on moss-covered slate.
+3. Turn the scene into a piece of green jade resting on a marble table.
+4. Change the miniature fortress to polished bronze while keeping the wooden table unchanged.
+5. Extract the miniature fortress and remove the table and background.
+
+[horn]
+1. Could you extract the skull for me?
+2. Change the dinosaur skull to polished bronze while preserving the museum background.
+3. Predict the normal map of the scene.
+4. Turn only the background into a watercolor painting while keeping the dinosaur skull unchanged.
+5. Detect the Canny edges of the scene.
+
+[room]
+1. Improve the clarity and sharpness of the original meeting room scene.
+2. Replace the television with a painting of red flowers while keeping the rest of the meeting room unchanged.
+3. Remove the chairs around the conference table while preserving the table and the rest of the room.
+4. Paint the walls light blue while keeping the furniture unchanged.
+5. Turn the entire meeting room into a cartoon illustration.
+
+============================================================
+CE3D-collect
+============================================================
+
+[cabin]
+1. turn into Claude Monet style
+2. turn into Willem de Kooning style
+3. turn into Gustav Klimt style
+4. Remove the cabin while preserving the surrounding trees and flooded field.
+5. Change the surrounding trees to autumn colors while keeping the cabin unchanged.
+
+[fujiyama]
+1. turn into Ukiyoe style
+2. turn into Jackson Pollock style
+3. turn into Wassily Kandinsky style
+4. Turn the scene into a watercolor painting.
+5. Change the scene to sunset with warm orange light reflected on the lake.
+
+[linkopling]
+1. make it more clear
+2. remove the building
+3. Turn the scene into an ink wash painting.
+4. Change all of the colored rocks to white while preserving the grass and buildings.
+5. Extract the colored rocks and remove the surrounding grass, trees, and buildings.
+
+============================================================
+NeRF-Art
+============================================================
+
+[fangzhou_nature]
+1. turn the man into anime character
+2. replace the man with a robot with glowing eyes
+3. Change the man's hair to silver while keeping his face, clothing, and background unchanged.
+4. Change the man's shirt to dark blue while preserving his face and the background.
+5. Turn the scene into a pencil sketch.
+
+============================================================
+DyCheck
+============================================================
+
+[haru-sit]
+1. Add a pair of glasses to the dog while keeping the rest of the scene unchanged.
+2. Change the dog's harness to bright blue while keeping the dog's fur and the background unchanged.
+3. Extract the dog and remove the background.
+4. Turn the entire scene into a Van Gogh painting.
+5. Defocus the background while keeping the dog sharp.
+
+[mochi-high-five]
+1. Change the cat's white fur to golden brown while preserving its dark facial markings and the background.
+2. Change the sofa upholstery to dark blue while keeping the cat unchanged.
+3. Turn the scene into a watercolor painting.
+4. Defocus the background while keeping the cat sharp.
+5. Extract the cat and remove the background.
+
+[paper-windmill]
+1. Change the pinwheel blades to alternating red and white.
+2. Change the flowerpot to cobalt blue while keeping the pinwheel and wooden wall unchanged.
+3. Detect the Canny edges of the scene.
+4. Turn the scene into a colored pencil sketch.
+5. Remove the pinwheel while preserving the flowerpot and wooden wall.
+
+============================================================
+DynamicNeRF
+============================================================
+
+[balloon2]
+1. remove the man and the balloon
+2. Change the green balloon to bright red while keeping the person and background unchanged.
+3. Change the person's checkered shirt to a plain blue shirt.
+4. Turn the scene into a watercolor painting.
+5. Defocus the background while keeping the person and balloon sharp.
+
+[skating]
+1. Change the skater's white shirt to red while keeping the rest of the scene unchanged.
+2. Turn the skater into an anime character while preserving the background.
+3. Predict the human pose of the skater.
+4. Defocus the background while keeping the skater sharp.
+5. Turn the entire scene into a Van Gogh painting.
+
+[truck]
+1. Turn the entire scene into a Picasso-style painting.
+2. Change the delivery truck's body to bright red while keeping the street and buildings unchanged.
+3. Remove the parked cars along the curb while keeping the truck and buildings unchanged.
+4. Change the scene to sunset with warm golden lighting.
+5. Improve the clarity and sharpness of the scene.
+
+[umbrella]
+1. Defocus the background while keeping the person and umbrella sharp.
+2. Change the yellow umbrella panels to red while keeping the dark panels and background unchanged.
+3. Turn the entire scene into a cartoon illustration.
+4. Extract the person and umbrella and remove the background.
+5. Predict the depth map of the scene.

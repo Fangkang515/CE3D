@@ -81,6 +81,7 @@ Each experiment reconstructs the atlas from the first $N$ consecutive video fram
 
 Reconstruction quality decreases over longer sequences, which contain more extensive motion and pose changes and place greater demands on temporal point correspondences.
 
+
 ### 4.3 Number of moving objects
 
 **Scenes:** `umbrella`, `Balloon1`, `Jumping` (DynamicNeRF).
@@ -103,7 +104,8 @@ The results characterize reconstruction performance under different dynamic-scen
 | Medium | 0.60 | 28.21 |
 | High | 0.80 | 27.94 |
 
-The **0.60** threshold yields the best PSNR among the tested settings. Confidence filtering changes both the reliability and the coverage of retained point correspondences; overly strict filtering can discard useful tracks.
+The **0.60** threshold yields the best PSNR among the tested settings. Confidence filtering changes both the reliability and the coverage of retained point correspondences; overly strict filtering can discard useful tracks. The results indicate that the tracking confidence threshold affects atlas reconstruction quality, reflecting a trade-off between correspondence reliability and coverage.
+
 
 ### 4.5 Pivot-view selection
 
